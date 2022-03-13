@@ -18,11 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         counter = savedInstanceState.getInt("Count");
         Log.d(LOG_TAG, "onRestoreInstanceState");
+        Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
     }
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("Count", counter);
         Log.d(LOG_TAG, "onSaveInstateState");
+        Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
     }
 
     @Override
