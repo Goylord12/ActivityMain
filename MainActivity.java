@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
     }
 
-    public void onClickBtnAddStudents(View view) {
+    public void onClickBtnAddBezenzef(View view) {
         counter+=1;
         TextView counterView = (TextView)findViewById(R.id.txt_counter);
         counterView.setText(counter.toString());
